@@ -1,0 +1,79 @@
+@use "./variables.scss" as *;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: rgba($bg-page, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid $border-color;
+
+    &__left, &__right {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        flex: 1;
+    }
+
+    &__right {
+        justify-content: flex-end;
+    }
+
+    &__middle {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        color: $text-primary;
+        
+        .highlight {
+            color: $accent;
+        }
+    }
+
+    &__logo, &__icon {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: $text-muted;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+        transition: color 0.2s ease;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+
+        svg {
+            color: $accent;
+            opacity: 0.8;
+            transition: opacity 0.2s ease;
+        }
+
+        &:hover {
+            color: $text-primary;
+            svg {
+                opacity: 1;
+            }
+        }
+    }
+
+    .logout-btn {
+        padding: 0;
+        margin-left: 1rem;
+        svg {
+            color: $text-muted;
+        }
+        &:hover svg {
+            color: $severity-high;
+        }
+    }
+}

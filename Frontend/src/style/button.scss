@@ -1,0 +1,28 @@
+@use "./variables.scss" as *;
+
+.button{
+
+    border: none;
+    outline: none;
+    padding-inline: 1.5rem;
+    padding-block: 0.75rem;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+
+    &.primary-button{
+        background-color: $accent;
+        color: #050505;
+        font-weight: 600;
+    }
+
+    &:hover.primary-button {
+        background-color: $accent-hover;
+        box-shadow: 0 4px 15px rgba($accent, 0.4);
+    }
+
+    &:active{
+        transform: scale(0.9);
+    }
+}

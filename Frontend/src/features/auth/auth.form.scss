@@ -1,0 +1,121 @@
+@use "../../style/variables.scss" as *;
+
+main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-page;
+    padding: 2rem;
+
+    .brand-title {
+        text-align: center;
+        color: $accent;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        font-weight: 800;
+        letter-spacing: -1px;
+    }
+
+    .form-container {
+        min-width: 450px;
+        background: $bg-card;
+        padding: 3rem;
+        border-radius: 1.5rem;
+        border: 1px solid rgba($accent, 0.2);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        
+        @media (max-width: 600px) {
+            min-width: 100%;
+            padding: 2rem;
+        }
+
+        h1 {
+            color: $text-primary;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        label {
+            color: $text-muted;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            input {
+                width: 100%;
+                border: 1px solid rgba(255,255,255,0.1);
+                outline: none;
+                padding-inline: 1rem;
+                padding-inline-end: 3rem; /* room for eye icon */
+                padding-block: 0.85rem;
+                border-radius: 0.75rem;
+                background: rgba(0,0,0,0.2);
+                color: $text-primary;
+                font-family: inherit;
+                transition: border-color 0.2s;
+                box-sizing: border-box;
+
+                &:focus {
+                    border-color: $accent;
+                }
+            }
+
+            .toggle-password {
+                position: absolute;
+                right: 1rem;
+                background: none;
+                border: none;
+                color: $text-muted;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                transition: color 0.2s;
+
+                &:hover {
+                    color: $accent;
+                }
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        color: $text-muted;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+
+    a {
+        color: $accent;
+        text-decoration: none;
+        font-weight: 600;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
