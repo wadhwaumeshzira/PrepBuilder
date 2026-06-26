@@ -1,6 +1,7 @@
 # 🚀 PrepBuilder: AI-Powered Interview Preparation Platform
 
-![PrepBuilder Banner](https://via.placeholder.com/1200x400.png?text=PrepBuilder+-+Ace+Your+Next+Interview)
+<img width="1918" height="972" alt="Screenshot 2026-06-26 013137" src="https://github.com/user-attachments/assets/e7ea0611-75f6-4c50-9c3b-766b30e21ba3" />
+
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
